@@ -46,7 +46,7 @@ const DictionaryPage = () => {
                 Este modulo(diccionario) corresponde al recuperatorio del <code>modulo-7</code> ReactJS.
             </p>
             <p>
-                URL <a href="https://github.com/Renevc14/React_Dictionary">https://github.com/Renevc14/React_Dictionary</a>
+                URL <a href="https://github.com/Renevc14/mod7">https://github.com/Renevc14/mod7</a>
             </p>
 
             <div className="row button-container">

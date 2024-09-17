@@ -3,7 +3,7 @@ const Github = () => {
         <>
                 <a
                 className="App-link"
-                href="https://github.com/Renevc14/React_Dictionary"
+                href="https://github.com/Renevc14/mod7"
                 target="_blank"
                 rel="noopener noreferrer"
                 >

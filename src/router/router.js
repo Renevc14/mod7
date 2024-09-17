@@ -7,7 +7,7 @@ import App from "../App";
 import LoginForm from "../screens/Forms/LoginForm";
 import DictionaryPage from "../screens/Dictionary/DictionaryPage";
 
-const basename = process.env.NODE_ENV === 'production' ? '/React_Dictionary' : '/';
+const basename = process.env.NODE_ENV === 'production' ? '/mod7' : '/';
 
 const router = createBrowserRouter([
     {
