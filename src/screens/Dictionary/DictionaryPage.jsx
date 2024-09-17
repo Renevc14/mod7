@@ -48,12 +48,20 @@ const DictionaryPage = () => {
             <p>
                 Corresponde al ejercicio recuperatorio.
             </p>
+            <p>
+                URL: <a href="https://github.com/Renevc14/mod7">https://github.com/Renevc14/mod7</a>
+            </p>
 
             <div className="row button-container">
                 <div className="form-group col-md-12 d-flex justify-content-center">
-                            <button className="btn black-btn" style={{marginRight: '10px'}} onClick={agregarPalabra}>Añadir Palabra</button>
-                            <button className="btn black-btn" style={{marginLeft: '10px'}} onClick={eliminarPalabra}>Eliminar Palabra</button>
-                            <button className="btn black-btn" style={{marginLeft: '10px'}} onClick={traducir}>Traducir Palabra</button>
+                    <button className="btn black-btn" style={{marginRight: '10px'}} onClick={agregarPalabra}>Añadir
+                        Palabra
+                    </button>
+                    <button className="btn black-btn" style={{marginLeft: '10px'}} onClick={eliminarPalabra}>Eliminar
+                        Palabra
+                    </button>
+                    <button className="btn black-btn" style={{marginLeft: '10px'}} onClick={traducir}>Traducir Palabra
+                    </button>
                 </div>
             </div>
 

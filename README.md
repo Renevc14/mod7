@@ -1,3 +1,6 @@
+# GITHUB PAGES
+URL: [https://renevc14.github.io/mod7/](https://renevc14.github.io/mod7/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
