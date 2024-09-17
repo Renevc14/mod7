@@ -14,12 +14,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #031633;
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  text-align: start;
+  justify-content: flex-start; /* Cambia el centrado vertical */
+  padding-top: 20px; /* Añade espacio en la parte superior */
   font-size: calc(10px + 2vmin);
   color: white;
 }

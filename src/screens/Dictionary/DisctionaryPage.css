@@ -1,0 +1,24 @@
+.black-btn {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.black-btn:hover {
+    background-color: #444;
+    border-color: #444;
+}
+.custom-modal .modal-content {
+    background-color: #e0e0e0;
+}
+.custom-modal .modal-header,
+.custom-modal .modal-footer {
+    background-color: #e0e0e0;
+}
+.custom-modal .modal-body {
+    background-color: #e0e0e0;
+}

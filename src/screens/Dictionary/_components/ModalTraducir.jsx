@@ -2,6 +2,7 @@ import { Button } from "react-bootstrap";
 import Modal from 'react-bootstrap/Modal';
 import React from 'react';
 import { useSelector, useDispatch } from "react-redux";
+import '../DisctionaryPage.css'
 
 const ModalTraducir = ({ show, close }) => {
     const [palabra, setPalabra] = React.useState('');
@@ -17,13 +18,9 @@ const ModalTraducir = ({ show, close }) => {
             palabra.ingles === texto || 
             palabra.portugues === texto
         );
-    
-        // Si no se encuentra la palabra, devolver un mensaje de error
         if (!palabraEncontrada) {
             return `La palabra '${texto}' no se encuentra en el diccionario.`;
         }
-    
-        // Devolver la traducción según el idioma solicitado
         switch (idioma) {
             case 'espanol':
                 return palabraEncontrada.espanol;
@@ -43,16 +40,14 @@ const ModalTraducir = ({ show, close }) => {
     
     if (!show) return null;
     return (
-        <Modal show={show} onHide={close}>
+        <Modal show={show} onHide={close} className="custom-modal">
             <Modal.Header closeButton>
-                <Modal.Title>Traductor USIP</Modal.Title>
+                <Modal.Title>Traductor</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <p>¿Qué palabra desea traducir en el diccionario?</p>
-                <p>Agregue su palabra y después seleccione el idioma a traducir.</p>
                 <div className="row" style={{ marginBottom: '10px' }}>
-                    <div className="form-group col-md-3">
-                        <label>Palabra a traducir: </label>
+                    <div className="form-group col-md-3 fw-bold">
+                        <label>Palabra: </label>
                     </div>
                     <div className="form-group col-md-9">
                         <input
@@ -60,13 +55,14 @@ const ModalTraducir = ({ show, close }) => {
                             type="text"
                             id="palabra"
                             name="palabra"
+                            placeholder={`Ingrese la palabra a traducir`}
                             value={palabra}
                             onChange={(e) => setPalabra(e.target.value)}
                         />
                     </div>
                 </div>
                 <div className="row" style={{ marginBottom: '10px' }}>
-                    <div className="form-group col-md-3">
+                    <div className="form-group col-md-3 fw-bold">
                         <label>Idioma de Traducción: </label>
                     </div>
                     <div className="form-group col-md-9">
@@ -81,7 +77,7 @@ const ModalTraducir = ({ show, close }) => {
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="secondary" onClick={close}>
-                    Close
+                    Cerrar
                 </Button>
                 <Button variant="primary" onClick={handleTranslate}>
                     Traducir

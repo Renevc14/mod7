@@ -2,7 +2,7 @@ import { useState } from "react";
 import ModalAgregarPalabra from "./_components/ModalAgregarPalabra";
 import ModalEliminarPalabra from "./_components/ModalEliminarPalabra";
 import ModalTraducir from "./_components/ModalTraducir";
-
+import './DisctionaryPage.css';
 
 const DictionaryPage = () => {
 
@@ -29,7 +29,7 @@ const DictionaryPage = () => {
 
     return (
         <div className="App-header">
-            <h1>DICTIONARY USIP</h1>
+            <h1 className="text-3xl font-bold text-center mb-4">MODULO 7 - REACT</h1>
             <ModalAgregarPalabra
                 show={showModalAgregarPalabra}
                 close={handleCloseAgregarPalabra}
@@ -43,19 +43,17 @@ const DictionaryPage = () => {
                 close={handleCloseTraducir}
             />
             <p>
-                Este modulo(diccionario) corresponde al recuperatorio del <code>modulo-7</code> ReactJS.
+                Esta aplicación es un diccionario que permite agregar, eliminar y traducir palabras en tres idiomas.
             </p>
             <p>
-                URL <a href="https://github.com/Renevc14/mod7">https://github.com/Renevc14/mod7</a>
+                Corresponde al ejercicio recuperatorio.
             </p>
 
             <div className="row button-container">
                 <div className="form-group col-md-12 d-flex justify-content-center">
-                            <button className="btn btn-primary" style={{marginRight: '10px'}} onClick={agregarPalabra}>Agregar Palabra</button>
-                            <button className="btn btn-primary" style={{marginLeft: '10px'}} onClick={eliminarPalabra}>Eliminar Palabra</button>            
-                </div>
-                <div className="form-group col-md-12 d-flex justify-content-center">
-                            <button className="btn btn-primary" onClick={traducir}>Traducir</button>
+                            <button className="btn black-btn" style={{marginRight: '10px'}} onClick={agregarPalabra}>Añadir Palabra</button>
+                            <button className="btn black-btn" style={{marginLeft: '10px'}} onClick={eliminarPalabra}>Eliminar Palabra</button>
+                            <button className="btn black-btn" style={{marginLeft: '10px'}} onClick={traducir}>Traducir Palabra</button>
                 </div>
             </div>
 

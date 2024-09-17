@@ -15,23 +15,19 @@ const ModalEliminarPalabra = ({ show, close}) => {
     }
     if (!show) return null;
     return (
-        <Modal show={show} onHide={close}>
+        <Modal show={show} onHide={close} className="custom-modal">
             <Modal.Header closeButton>
-            <Modal.Title>Traductor USIP</Modal.Title>
+            <Modal.Title>Eliminar Palabra</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <p>Que palabra desea eliminar del diccionario?</p>
-                <p>Puede escribir su palabra en ESPAÑOL, INGLÉS O PORTUGUES </p>
-                <div className="row" style={{marginBottom: '10px'}}>
-                    <div className="form-group col-md-3">
-                        <label>Palabra: </label>
-                    </div>
-                    <div className="form-group col-md-9">
+                <div className="row" style={{marginBottom: '2px'}}>
+                    <div className="form-group">
                         <input
                             className="form-control"
                             type="text"
                             id="palabra"
                             name="palabra"
+                            placeholder="Ingrese la palabra a eliminar"
                             value={palabra}
                             onChange={(e) => setPalabra(e.target.value)}
                         />
@@ -40,7 +36,7 @@ const ModalEliminarPalabra = ({ show, close}) => {
             </Modal.Body>
             <Modal.Footer>
             <Button variant="secondary" onClick={close}>
-                Close
+                Cerrar
             </Button>
             <Button variant="primary" onClick={() =>{
                         eliminarPalabra();
