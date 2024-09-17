@@ -1,0 +1,2 @@
+export const SET_NAME_MODULE = "SET_NAME_MODULE";
+export const SET_NAME_LESSON = "SET_NAME_LESSON";

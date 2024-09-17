@@ -1,0 +1,1 @@
+export const selectPalabras = (state) => state.dictionary.formData.palabras;
